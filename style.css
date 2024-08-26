@@ -1,0 +1,358 @@
+:root {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 1rem;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  font-family: "Delius Unicase", sans-serif;
+  position: fixed;
+  height: 13vh;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  background-color: #6f6af7;
+  margin-bottom: 5rem;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  font-family: "DM Sans", sans-serif;
+}
+nav ul li {
+  padding-right: 1rem;
+  display: inline-block;
+  width: 5rem;
+  text-align: center;
+
+  padding-left: 1.5rem;
+}
+
+.nav-heading {
+  position: relative;
+  bottom: 0.6rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+main {
+  position: relative;
+  top: 5rem;
+  height: 87vh;
+  text-align: center;
+}
+select {
+  position: relative;
+  background-color: #6f6af7;
+  color: white;
+  border: none;
+  margin-left: 1.4rem;
+  bottom: 4px;
+
+  cursor: pointer;
+}
+
+nav ul li,
+select {
+  font-weight: 400;
+  font-family: DM Sans;
+}
+select:disabled {
+  opacity: 1;
+  font-size: 16px;
+}
+
+.search-bar {
+  width: 100%;
+  position: relative;
+  bottom: 4px;
+  max-width: 11rem;
+  background: white;
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  padding: 0.42rem 1.5rem;
+  margin-left: 2rem;
+}
+.search-bar input {
+  background: transparent;
+  flex: 1;
+
+  border: 0;
+  outline: 0;
+  color: #9f9f9f;
+}
+.search-bar input::placeholder {
+  color: #9f9f9f;
+  font-family: DM Sans;
+  font-weight: 700;
+}
+.search-bar button img {
+  width: 1rem;
+}
+.search-bar button {
+  border: 0;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.hamburger {
+  height: 2rem;
+  position: relative;
+  width: 3rem;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 1.3rem;
+}
+.hamburger img {
+  position: absolute;
+  width: 1.8rem;
+  left: 50%;
+  top: 43%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-content: center;
+  margin: 3%;
+  top: 3rem;
+  width: 100%;
+}
+
+.cards textarea {
+  background: #e5d8ff;
+  border-radius: 1rem;
+  border: none;
+  width: 45%;
+  padding-left: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  font-family: DM Sans;
+  font-weight: 400;
+  resize: none;
+  outline: none;
+  margin-left: 2rem;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.cards img {
+  width: 25%;
+}
+
+.report {
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  position: relative;
+
+  width: 79%;
+  left: 13.5%;
+}
+
+.report button {
+  width: 25%;
+  text-align: left;
+  margin: 4%;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  border: none;
+  font-family: DM Sans;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.report button:nth-of-type(1) {
+  background: #929dff;
+}
+.report button:nth-of-type(2) {
+  background: #734cf2;
+}
+.report button:nth-of-type(3) {
+  background: #d288ff;
+}
+.report button:nth-of-type(4) {
+  background: #000000;
+}
+.last-div {
+  position: relative;
+  height: 25rem;
+  display: flex;
+
+  width: 73%;
+  left: 2.5%;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+
+  background: #483eff;
+}
+.left-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 20%;
+  padding-bottom: 5%;
+  height: 100%;
+  margin: 1%;
+}
+.left-div button {
+  position: relative;
+  font-family: DM Sans;
+  font-weight: 700;
+  margin: 0 1rem;
+  height: 15%;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  background-color: inherit;
+  color: #ffffff;
+  border: 2px solid white;
+  border-radius: 1rem;
+
+  margin: 3%;
+}
+.left-div :first-child {
+  background: #bce0f6;
+  color: #000000;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.right-div {
+  width: 90%;
+  position: relative;
+  height: 90%;
+  margin: 1rem;
+  background: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 0.5rem;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 45.99px;
+  letter-spacing: 0.105em;
+  text-align: left;
+  color: #04285a;
+  margin-left: 1rem;
+}
+.form-group {
+  margin-bottom: 10px; /* Adds space between each row */
+  margin-left: 2rem;
+}
+
+.form-group label {
+  display: inline-block; /* Makes the label and input align horizontally */
+  width: 100px; /* Sets a fixed width for the labels */
+  color: #04285a;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.form-group input {
+  display: inline-block; /* Keeps input fields on the same line as labels */
+  border: none;
+  outline: none;
+  color: #143565;
+  width: 13rem;
+}
+.input-div::placeholder {
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #143565;
+}
+
+.absolute-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10%;
+  width: 15%;
+  height: 12%;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-color: #000000;
+  right: 5%;
+  cursor: pointer;
+}
+.absolute-button img {
+  margin-left: 0.4rem;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background-color: black;
+}
+
+.help-line {
+  position: fixed;
+  top: 82%;
+  right: 12%;
+  background-color: #ffffff;
+  width: 3%;
+  max-height: 8%;
+  max-width: 4%;
+  object-fit: contain;
+  height: 7.5%;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: -5px 0 1px rgba(0, 0, 0, 0.1), 5px 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.parent-sticky {
+  height: 100vh;
+  width: 7vw;
+  position: absolute;
+  right: 3%;
+  top: 15%;
+}
+
+.sticky-icons {
+  display: flex;
+  position: sticky;
+  justify-content: center;
+
+  flex-direction: column;
+  align-items: center;
+  top: 30%;
+  width: 50%;
+}
+.sticky-icons button {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 2px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.sticky-icons button img {
+  width: 94%;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}

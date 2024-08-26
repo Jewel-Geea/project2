@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+    <title>Dappr</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-heading">dappr</div>
+      <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Information</li>
+        <select disabled>
+          <option>More</option>
+        </select>
+        <form class="search-bar">
+          <input type="search" placeholder="Search" />
+          <button type="submit"><img src="images/search-icon.png" /></button>
+        </form>
+      </ul>
+      <div class="hamburger">
+        <img src="images/Vector.png" alt="Dropdown not found" />
+      </div>
+    </nav>
+    <main>
+      <div class="cards">
+        <img src="images/left-image.png" />
+        <textarea
+          placeholder="It's not only writers who can benefit from this free online tool. If you're a programmer who's working on a ......"></textarea>
+        <div class="parent-sticky">
+          <div class="sticky-icons">
+            <button><img src="images/whatsapp.png" alt="WhatsApp" /></button>
+            <button><img src="images/fb.png" alt="Facebook" /></button>
+            <button><img src="images/twitter.png" alt="Twitter" /></button>
+          </div>
+        </div>
+      </div>
+      <div class="report">
+        <button>
+          <p>Total Question’s</p>
+          <p>200,000</p>
+        </button>
+        <button>
+          <p>Total Answer’s</p>
+          <p>105,000</p>
+        </button>
+        <button>
+          <p>Participated</p>
+          <p>10,000</p>
+        </button>
+        <button>
+          <p>Total Passed</p>
+          <p>6,000</p>
+        </button>
+      </div>
+      <div class="last-div">
+        <div class="left-div">
+          <button>YOUR INFO</button>
+          <button>BOOKMARKS</button>
+          <button>SETTINGS</button>
+        </div>
+        <div class="right-div">
+          <h1>Your information</h1>
+          <form action="submit">
+            <div class="form-group">
+              <label for="Name"
+                >Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label
+              >
+              <input
+                id="Name"
+                type="text"
+                class="input-div"
+                placeholder="Atul Singhal"
+                required />
+            </div>
+            <div class="form-group">
+              <label for="Email"
+                >Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label
+              >
+              <input
+                id="Email"
+                type="email"
+                class="input-div"
+                placeholder="atul@gmail.com"
+                required />
+            </div>
+            <div class="form-group">
+              <label for="Phone"
+                >Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label
+              >
+              <input
+                id="Phone"
+                type="tel"
+                class="input-div"
+                placeholder="+91 8131424888"
+                required />
+            </div>
+            <div class="form-group">
+              <label for="Marks"
+                >Marks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label
+              >
+              <input
+                id="Marks"
+                type="number"
+                step="0.2"
+                class="input-div"
+                placeholder="500.00"
+                min="0"
+                required />
+            </div>
+            <button type="submit" class="absolute-button">
+              NEXT<img src="images/Arrow.png" alt="arrow not found" />
+            </button>
+          </form>
+
+          <!-- below is the right-div ending tag -->
+        </div>
+      </div>
+      <img
+        class="help-line"
+        src="images/help-line.png"
+        alt="help-line image not found" />
+    </main>
+  </body>
+</html>
